@@ -59,6 +59,7 @@ nav li a:hover{
     background-image: url(imagenes/fondo.jpg);
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
     overflow: hidden;
 }
 .contenedor__texto{
@@ -164,7 +165,7 @@ nav li a:hover{
 .servicios__contenedor{   
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 #servicios h2{
     font-size: 40px;
@@ -394,3 +395,198 @@ footer img{
     padding-bottom: 15px;
 }
 
+/* MEDIA QUERY HEADER */
+@media screen and (max-width:1000px){
+    
+    header{
+        height: 100px;
+        width: 100%;
+        background-color: #15171b;
+        position: fixed;
+        z-index: 1;
+        box-shadow: 2px 2px 20px #E53340;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo{
+        font-size: 25px;
+        font-weight: 600;
+        padding-left: 10%;
+    }
+    nav{
+        padding-right: 10%;
+        display: none;
+    }
+}
+/* MEDIA QUERY MAIN */
+@media screen and (max-width:800px){
+    .contenedor{
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 10em;
+    }
+    .contenedor__texto{
+        width: 80%;
+        text-align: center;
+    }
+    .contenedor__texto h1 {
+        font-size: 35px;
+    }
+}
+
+/* MEDIA QUERY SOBRE MI */
+@media screen and (max-width:800px){
+    #sobreMi {
+        height: 145vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+        align-items: center;
+        overflow: hidden;
+    }
+    
+     .sobreMi__img{
+        height: 700px;
+        width: 350px;
+        background-image: url(imagenes/foto\ perfil.png);
+        border: 5px solid #E53340; 
+        background-size: cover;
+        margin-bottom:50px;
+        
+    } 
+    
+     .sobreMi__texto{
+        margin-top: 40px; 
+        width: 26em;
+        height: 75%;
+        text-align: center;
+    }
+    .sobreMi__texto h2{
+        font-size: 30px;
+    }
+    .sobreMi__texto p{
+        line-height: 2;
+    }
+    .sobreMi-flex1 {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 40px;
+        width: 100%;
+    }
+    .sobreMi-flex2 {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        width: 100%;
+    }
+}
+
+/* MEDIA QUERY SERVICIOS */
+@media screen and (max-width:950px) {
+    #servicios{
+        height: 135vh;
+    }
+    .servicios__contenedor{   
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #servicios h2{
+        font-size: 30px;
+    }
+    .servicios__caja{
+        width: 280px;
+        height: 280px;
+        margin:20px;
+    }
+}
+
+/* MEDIA QUERY PORTFOLIO */
+
+@media screen and (max-width:720px) {
+    
+    /* PORTFOLIO */
+    #portfolio{
+        height: 220vh;
+        width: 100%;
+        background-color: #15171b;
+    }
+    #portfolio h2{
+        font-size: 40px;
+        padding-bottom: 50px;
+        text-align: center;
+        padding-top: 80px;
+    }
+    
+    .portfolio__contenedor{
+        margin: auto;
+        height: 100em;
+        width: 20em;
+        display: grid;
+        grid-template-areas: 
+        "box1"
+        "box1"
+        "box2"
+        "box3"
+        "box4"
+        "box5"
+        "box6";
+        gap: 20px;
+    }
+}
+/* MEDIA QUERY PORTFOLIO */
+
+@media screen and (max-width:900px){
+    #contacto{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .contacto__img{
+        margin-bottom: 40px;
+    }
+    
+    .contacto__form{
+        margin: 50px 0;
+    }
+    .contacto__form h2{
+        font-size: 30px;
+        text-align: center;
+    }
+    .contacto__form label{
+        font-size: 20px;
+    }
+    .contacto__email{
+        height: 50px;
+        width: 300px;
+    }
+    .contacto__textArea{
+        height: 150px;
+        width: 300px;
+    }
+}
+/* MEDIA QUERY FOOTER */
+@media screen and (max-width:900px){
+    footer{
+        height: 60vh;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;  
+    }
+    .footer__caja{
+        padding: 20px;
+    }
+}
