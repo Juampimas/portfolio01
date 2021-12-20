@@ -78,9 +78,8 @@ nav li a:hover{
 .contenedor__texto a{
     text-decoration: none;
     color: #E53340;
-    border: 3px solid #E53340;
-    padding: 15px;
-    border-radius: 15px;
+    border: 2px solid #E53340;
+    padding: 15px 20px;
     font-weight: 600;
     transition: all 200ms ease;
 }
@@ -144,9 +143,8 @@ nav li a:hover{
 .sobreMi__texto a{
     text-decoration: none;
     color: #E53340;
-    border: 3px solid #E53340;
-    padding: 15px;
-    border-radius: 15px;
+    border: 2px solid #E53340;
+    padding: 15px 20px;
     font-weight: 600;
     transition: all 200ms ease;
 }
@@ -177,7 +175,6 @@ nav li a:hover{
     height: 280px;
     margin: 0 20px;
     background-color: rgb(87, 86, 86);
-    border-radius: 15px;  
     box-shadow: 2px 2px 20px #E53340;
     border: 3px solid #E53340;
 }
@@ -218,9 +215,8 @@ nav li a:hover{
 .servicios__btn a{
     text-decoration: none;
     color: #E53340;
-    border: 3px solid #E53340;
-    padding: 15px;
-    border-radius: 15px;
+    border: 2px solid #E53340;
+    padding: 15px 20px;
     font-weight: 600;
     transition: all 200ms ease;
 }
@@ -301,9 +297,8 @@ nav li a:hover{
 .btn-verMas a{
     text-decoration: none;
     color: #E53340;
-    border: 3px solid #E53340;
-    padding: 15px;
-    border-radius: 15px;
+    border: 2px solid #E53340;
+    padding: 15px 20px;
     font-weight: 600;
     transition: all 200ms ease;
 }
@@ -346,19 +341,22 @@ nav li a:hover{
     width: 500px;
     background-color: #2b2e35;
     border-bottom: 5px solid #E53340;
+    color: white;
+    padding: 10px;
 }
 .contacto__textArea{
     height: 200px;
     width: 500px;
     background-color: #2b2e35;
     border-bottom: 5px solid #E53340;
+    color: white;
+    padding: 10px;
 }
 .contacto__enviar{
     text-decoration: none;
     color: #E53340;
-    border: 3px solid #E53340;
+    border: 2px solid #E53340;
     padding: 15px 30px;
-    border-radius: 15px;
     font-weight: 600; 
     background-color: #191C21;
     transition: all 200ms ease;
