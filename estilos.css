@@ -491,7 +491,7 @@ footer img{
 /* MEDIA QUERY SERVICIOS */
 @media screen and (max-width:950px) {
     #servicios{
-        height: 185vh;
+        height: 190vh;
     }
     .servicios__contenedor{   
         display: flex;
@@ -515,7 +515,7 @@ footer img{
     
     /* PORTFOLIO */
     #portfolio{
-        height: 300vh;
+        height: 310vh;
         width: 100%;
         background-color: #15171b;
     }
