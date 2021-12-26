@@ -82,6 +82,14 @@ nav li a:hover{
     padding: 15px 20px;
     font-weight: 600;
     transition: all 200ms ease;
+    animation: btn 2s infinite;
+    display: inline-block;
+}
+
+@keyframes btn{
+    0%{transform: scale(1);}
+    50%{transform: scale(1.1);}
+    100%{transform: scale(1);}
 }
 .contenedor__texto a:hover{
     background-color: #E53340;
@@ -111,13 +119,36 @@ nav li a:hover{
     background-image: url(imagenes/foto\ perfil.png);
     border: 5px solid #E53340; 
     background-size: cover;
+    animation-name: animacion1;
+    animation-duration: 2s;
+    position: relative;
     
 } 
+
+/* ANIMACION */
+@keyframes animacion1 {
+    0% {left: -200px;
+        opacity: 0;}
+
+    100% {left: 0;
+        opacity: 1;}
+}
 
  .sobreMi__texto{
     padding-left: 50px;
     width: 35em;
     height: 75%;
+    animation-name: animacion2;
+    animation-duration: 2s;
+    position: relative;
+}
+
+@keyframes animacion2{
+    0% {left: 200px;
+        opacity: 0;}
+    100%{left: 0;
+        opacity: 1;}
+
 }
 .sobreMi__texto h2{
     font-size: 40px;
@@ -148,6 +179,7 @@ nav li a:hover{
     font-weight: 600;
     transition: all 200ms ease;
 }
+
 .sobreMi__texto a:hover{
     background-color: #E53340;
     color: white;
@@ -328,7 +360,11 @@ nav li a:hover{
 
 .contacto__form{
     margin: 0 20px;
+    animation-name: animacion4;
+    animation-duration: 2s;
+    position: relative;
 }
+
 .contacto__form h2{
     font-size: 40px;
     padding-bottom: 30px;
